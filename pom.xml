@@ -2,15 +2,16 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.bobcat00</groupId>
   <artifactId>WallClock</artifactId>
-  <version>0.2.2c</version>
+  <version>0.2.2d</version>
    <build>
       <plugins>
           <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-compiler-plugin</artifactId>
+              <version>3.1</version>
               <configuration>
-                  <source>1.7</source>
-                  <target>1.7</target>
+                  <source>1.8</source>
+                  <target>1.8</target>
               </configuration>
           </plugin>
       </plugins>
@@ -25,15 +26,15 @@
    </build>
    <repositories>
        <repository>
-           <id>bukkit-repo</id>
-           <url>http://repo.bukkit.org/content/groups/public/</url>
+           <id>spigot-repo</id>
+           <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
        </repository>
    </repositories>
    <dependencies>
        <dependency>
            <groupId>org.bukkit</groupId>
            <artifactId>bukkit</artifactId>
-           <version>1.7.2-R0.3</version>
+           <version>1.14.4-R0.1-SNAPSHOT</version>
            <type>jar</type>
            <scope>provided</scope>
        </dependency>

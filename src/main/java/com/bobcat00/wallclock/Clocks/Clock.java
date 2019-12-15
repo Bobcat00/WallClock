@@ -16,7 +16,7 @@ import java.text.SimpleDateFormat;
 
 import com.bobcat00.wallclock.WallClockPlugin;
 
-import org.bukkit.Material;
+import org.bukkit.Tag;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
 
@@ -67,7 +67,7 @@ public abstract class Clock {
 	// Check if this clock is still associated with a sign
 	// CAVEAT! Block.getType return Material.AIR if the chunk is not loaded!
 	public boolean isValid() {
-		return m_signBlock.getType() == Material.WALL_SIGN;
+	    return Tag.WALL_SIGNS.isTagged(m_signBlock.getType());
 	}
 	
 	public boolean isLoaded() {
