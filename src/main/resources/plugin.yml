@@ -1,0 +1,13 @@
+name: WallClock
+main: com.bobcat00.wallclock.WallClockPlugin
+softdepend: ['Multiverse-Core']
+version: 0.2.2c
+authors: [ Sidein, Bobcat00 ]
+permissions:
+    WallClock.build:
+        description: Build / destroy Wall Clocks.
+        default: op
+commands:
+    wallclock:
+        description: Save or load the world clocks
+        usage: /wallclock [save|load]
