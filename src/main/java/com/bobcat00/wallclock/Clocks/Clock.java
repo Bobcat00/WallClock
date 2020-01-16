@@ -16,6 +16,7 @@ import java.text.SimpleDateFormat;
 
 import com.bobcat00.wallclock.WallClockPlugin;
 
+import org.bukkit.Location;
 import org.bukkit.Tag;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
@@ -71,7 +72,10 @@ public abstract class Clock {
 	}
 	
 	public boolean isLoaded() {
-		return m_signBlock.getChunk().isLoaded();
+	    Location loc = m_signBlock.getLocation();
+	    int chunkX = loc.getBlockX() >> 4;
+	    int chunkZ = loc.getBlockZ() >> 4;
+	    return loc.getWorld().isChunkLoaded(chunkX, chunkZ);
 	}
 	
 	// Convenience method

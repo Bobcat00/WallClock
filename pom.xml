@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.bobcat00</groupId>
   <artifactId>WallClock</artifactId>
-  <version>0.2.2d</version>
+  <version>0.2.2e</version>
    <build>
       <plugins>
           <plugin>
@@ -32,10 +32,9 @@
    </repositories>
    <dependencies>
        <dependency>
-           <groupId>org.bukkit</groupId>
-           <artifactId>bukkit</artifactId>
-           <version>1.14.4-R0.1-SNAPSHOT</version>
-           <type>jar</type>
+           <groupId>org.spigotmc</groupId>
+           <artifactId>spigot-api</artifactId>
+           <version>1.15.1-R0.1-SNAPSHOT</version>
            <scope>provided</scope>
        </dependency>
    </dependencies>
