@@ -34,7 +34,7 @@ public class SystemClock extends Clock {
 		if (!m_label.isEmpty()) {
 			s.setLine(1, m_label);
 		} else {
-			s.setLine(1, m_formatter.getTimeZone().getDisplayName(false, TimeZone.SHORT));
+			s.setLine(1, m_formatter.getTimeZone().getID());
 		}
 		s.setLine(2, m_formatter.format(new Date()));
 		s.setLine(3, "");

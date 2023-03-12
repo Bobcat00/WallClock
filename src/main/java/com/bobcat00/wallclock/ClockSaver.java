@@ -19,7 +19,6 @@ import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.TimeZone;
 
 import com.bobcat00.wallclock.Clocks.Clock;
 import com.bobcat00.wallclock.Clocks.GameClock;
@@ -54,7 +53,7 @@ public class ClockSaver {
                 out.write(block.getZ() + ",");
                 
                 if (clock instanceof SystemClock) {
-            		out.write(((SystemClock)clock).getTimezone().getDisplayName(false,TimeZone.SHORT) + ",");
+            		out.write(((SystemClock)clock).getTimezone().getID() + ",");
             	} else if (clock instanceof GameClock) {
             		out.print(",");
             	}
