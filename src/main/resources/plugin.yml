@@ -1,9 +1,9 @@
 name: WallClock
 main: com.bobcat00.wallclock.WallClockPlugin
 softdepend: ['Multiverse-Core']
-version: 0.2.2f
+version: 0.2.2g-SNAPSHOT
 authors: [ Sidein, Bobcat00 ]
-api-version: 1.19
+api-version: '1.21'
 permissions:
     WallClock.build:
         description: Build / destroy Wall Clocks.
