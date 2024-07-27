@@ -1,7 +1,7 @@
 name: WallClock
 main: com.bobcat00.wallclock.WallClockPlugin
 softdepend: ['Multiverse-Core']
-version: 0.2.2g-SNAPSHOT
+version: 0.2.2g
 authors: [ Sidein, Bobcat00 ]
 api-version: '1.21'
 permissions:
